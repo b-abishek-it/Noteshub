@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NotesHub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>NotesHub</h1>
+    </div>
+    <div class="container">
+      <div class="note-container">
+        <h2>Subject Title</h2>
+        <h4>Subject Topics</h4>
+        <p>Short Notes</p>
+        <button onclick="deletenote(event)">Delete</button>
+      </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+      <h2>Add Notes</h2>
+      <form>
+        <input type="text" placeholder="Subject Title" id="note-title-input" />
+        <input type="text" placeholder="Topics" id="note-topics-input" />
+        <textarea placeholder="Short Notes" id="notes-input"></textarea>
+        <button id="add-note">ADD</button>
+        <button id="cancel-popup">CANCEL</button>
+      </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+  </body>
+</html>
